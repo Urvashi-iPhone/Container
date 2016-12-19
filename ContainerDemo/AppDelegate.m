@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+@import Firebase;
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [FIRApp configure];
+     [GADMobileAds configureWithApplicationID:@"ca-app-pub-6429526891658542~4151689316"];
     return YES;
 }
 

@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ContainerViewController.h"
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *second;
+@property (weak, nonatomic) IBOutlet UIButton *first;
+@property (weak, nonatomic) IBOutlet UIButton *third;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *menubtn;
+@property ContainerViewController *container;
 
+@property (nonatomic)NSInteger btntag;
 @end
 
